@@ -1,0 +1,22 @@
+.offers {
+  background-color: $White;
+  width: 1140px;
+  height: 356px;
+  border-radius: 10px;
+
+  .offer1 {
+    width: 1140px;
+    height: 356px;
+    border-radius: 10px;
+    // overflow: hidden;
+
+    .img {
+      width: 600px;
+      position: relative;
+      bottom: 11.5cm;
+      left: 50%;
+      // transform: rotateZ(47.14deg);
+      transform: rotateY(90deg);
+    }
+  }
+}
