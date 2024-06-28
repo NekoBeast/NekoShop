@@ -4,10 +4,11 @@ import "../scss/main.css";
 export default function Home() {
   return (
     <>
-      <div className="pages">
-        <div className="nav">
-          <Nav />
-        </div>
+      <div className="nav">
+        <Nav />
+      </div>
+      <div className="main">
+        <div className="img"></div>
         <Main />
       </div>
     </>

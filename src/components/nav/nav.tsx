@@ -1,6 +1,8 @@
+"use client";
 import { Image } from "@nextui-org/image";
 import React from "react";
 import { icons } from "@/icons/icons";
+
 export default function Nav() {
   return (
     <nav>
@@ -14,6 +16,7 @@ export default function Nav() {
           </h1>
         </div>
       </div>
+
       <div className="search">
         <input type="search" placeholder="Search..." />
         <div className="searchIcone"></div>

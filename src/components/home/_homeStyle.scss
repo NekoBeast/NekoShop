@@ -1,34 +1,16 @@
 @import "../colors/rgb";
 
-section {
+.main {
   position: relative;
   background-color: $orange;
   width: 100%;
   height: 100svh;
-  z-index: -2;
-  .bg {
-    position: fixed;
-    width: 100%;
-    height: 90svh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: -2;
 
-    .img {
-      background-image: url("../img/trans.png");
-      background-position: center;
-      background-size: cover;
-      width: 80%;
-      height: 100%;
-      filter: blur(5px);
-    }
-  }
   .ads {
     display: flex;
     justify-content: space-between;
     align-items: end;
-    width: 66%;
+    width: 85%;
     height: 400px;
     margin-left: 90px;
 
@@ -39,6 +21,7 @@ section {
       width: 416px;
       height: 281px;
       padding: 50px;
+
       .fashon {
         display: flex;
         align-items: center;

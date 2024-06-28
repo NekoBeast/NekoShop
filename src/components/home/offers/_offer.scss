@@ -1,22 +1,86 @@
 .offers {
-  background-color: $White;
   width: 1140px;
   height: 356px;
+  background-color: white;
+  overflow: hidden;
   border-radius: 10px;
-
-  .offer1 {
+  .move {
+    position: absolute;
     width: 1140px;
     height: 356px;
-    border-radius: 10px;
-    // overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    .header {
+      position: absolute;
+      padding-right: 200px;
+      z-index: 2;
+      color: rgb(10, 8, 8);
+      font-weight: 900;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      text-align: right;
+      text-transform: uppercase;
+      line-height: 2cm;
+      h2 {
+        font-size: 3.5rem;
+      }
+      h1 {
+        font-size: 5rem;
+        .per {
+          color: orange;
+        }
+      }
+      .shopnow {
+        text-transform: capitalize;
 
-    .img {
-      width: 600px;
+        p {
+          font-size: 2rem;
+        }
+        button {
+          line-height: 0cm;
+
+          background-color: rgb(11, 8, 8);
+          border-radius: 50px;
+          width: 172px;
+          height: 51px;
+          font-size: 1.5rem;
+          color: white;
+          transition: all 0.3s ease-in-out;
+          &:hover {
+            color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
+          }
+        }
+      }
+    }
+  }
+  .offer {
+    z-index: -1;
+    width: 1140px;
+    height: 356px;
+    .bgs {
+      display: flex;
       position: relative;
-      bottom: 11.5cm;
-      left: 50%;
-      // transform: rotateZ(47.14deg);
-      transform: rotateY(90deg);
+      bottom: 9.5cm;
+      left: 3cm;
+      background-color: rgb(233, 221, 221);
+      img {
+        position: relative;
+        width: 600px;
+        transform: rotateZ(47.14deg);
+      }
+      .img1 {
+        position: relative;
+        right: 2cm;
+      }
+      .img2 {
+        position: relative;
+        top: 6cm;
+        left: 9cm;
+        width: 550px;
+        height: 750px;
+      }
     }
   }
 }

@@ -10,13 +10,13 @@ nav {
   .logo {
     position: relative;
     line-height: 1.5cm;
-
+    z-index: 999;
     top: 50px;
 
     .clipPath {
       position: absolute;
       clip-path: polygon(100% 0%, 75% 100%, 0% 100%, 0% 0%);
-      background-color:$Black;
+      background-color: $Black;
       width: 424px;
       height: 149px;
       z-index: -1;
