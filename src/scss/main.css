@@ -2,9 +2,9 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: rgb(0, 0, 0);
   width: 100%;
   height: 71px;
-  background-color: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
 }
 nav .logo {
@@ -23,7 +23,6 @@ nav .logo .clipPath {
   z-index: -1;
 }
 nav .logo .header {
-  z-index: 1;
   width: 424px;
   display: flex;
   align-items: center;
@@ -31,6 +30,14 @@ nav .logo .header {
   height: 149px;
 }
 nav .logo .header h1 {
+  background-image: url("https://i.pinimg.com/originals/82/b9/fc/82b9fc2387d46e545ee8b3a8199356f0.jpg");
+  background-size: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
   font-size: 4.5rem;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-weight: bold;
@@ -40,6 +47,14 @@ nav .logo .header h1 {
   right: 2cm;
 }
 nav .logo .header h1 .shop {
+  background-image: url("https://i.pinimg.com/originals/82/b9/fc/82b9fc2387d46e545ee8b3a8199356f0.jpg");
+  background-size: 200px;
+  background-position-x: -2cm;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
   font-size: 3rem;
   position: relative;
   left: 3cm;
@@ -83,6 +98,17 @@ nav .nav .profile {
   justify-content: space-between;
   width: 220px;
 }
+nav .nav .profile .settings {
+  display: none;
+  z-index: 3;
+  position: absolute;
+  top: 70px;
+}
+nav .nav .profile .singend {
+  position: absolute;
+  z-index: 3;
+  top: 70px;
+}
 nav .nav .info {
   font-weight: bolder;
   font-size: 0.8em;
@@ -113,7 +139,16 @@ nav .nav .languages {
   position: relative;
   background-color: rgb(255, 172, 11);
   width: 100%;
-  height: 100svh;
+  height: 200svh;
+}
+.main .shoesImg {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/trans.png");
+  background-size: 45cm;
+  background-repeat: no-repeat;
+  position: fixed;
+  filter: blur(5px);
 }
 .main .ads {
   display: flex;
@@ -137,94 +172,13 @@ nav .nav .languages {
   font-size: 20px;
   font-weight: bolder;
   height: 65px;
+  transition: all 0.2s ease-in-out;
+}
+.main .ads .catogories .fashon:hover {
+  color: rgb(255, 172, 11);
 }
 .main .ads .catogories .fashon .icons {
   padding-right: 15px;
-}
-
-.offers {
-  width: 1140px;
-  height: 356px;
-  background-color: white;
-  overflow: hidden;
-  border-radius: 10px;
-}
-.offers .move {
-  position: absolute;
-  width: 1140px;
-  height: 356px;
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  justify-content: center;
-}
-.offers .move .header {
-  position: absolute;
-  padding-right: 200px;
-  z-index: 2;
-  color: rgb(10, 8, 8);
-  font-weight: 900;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-align: right;
-  text-transform: uppercase;
-  line-height: 2cm;
-}
-.offers .move .header h2 {
-  font-size: 3.5rem;
-}
-.offers .move .header h1 {
-  font-size: 5rem;
-}
-.offers .move .header h1 .per {
-  color: orange;
-}
-.offers .move .header .shopnow {
-  text-transform: capitalize;
-}
-.offers .move .header .shopnow p {
-  font-size: 2rem;
-}
-.offers .move .header .shopnow button {
-  line-height: 0cm;
-  background-color: rgb(11, 8, 8);
-  border-radius: 50px;
-  width: 172px;
-  height: 51px;
-  font-size: 1.5rem;
-  color: white;
-  transition: all 0.3s ease-in-out;
-}
-.offers .move .header .shopnow button:hover {
-  color: rgb(0, 0, 0);
-  background-color: rgb(255, 255, 255);
-}
-.offers .offer {
-  z-index: -1;
-  width: 1140px;
-  height: 356px;
-}
-.offers .offer .bgs {
-  display: flex;
-  position: relative;
-  bottom: 9.5cm;
-  left: 3cm;
-  background-color: rgb(233, 221, 221);
-}
-.offers .offer .bgs img {
-  position: relative;
-  width: 600px;
-  transform: rotateZ(47.14deg);
-}
-.offers .offer .bgs .img1 {
-  position: relative;
-  right: 2cm;
-}
-.offers .offer .bgs .img2 {
-  position: relative;
-  top: 6cm;
-  left: 9cm;
-  width: 550px;
-  height: 750px;
 }
 
 .categories {
@@ -247,15 +201,21 @@ nav .nav .languages {
   font-size: 1.3em;
   text-transform: capitalize;
 }
-.categories .product {
+.categories .categories_products {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+.categories .categories_products .product {
+  margin-top: 2.5em;
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: end;
   width: 300px;
   height: 443px;
-  position: absolute;
-  top: 1.5cm;
   border-radius: 10px;
   background-position: center;
   background-repeat: no-repeat;
@@ -264,7 +224,7 @@ nav .nav .languages {
   z-index: 10;
   transition: all 0.3s;
 }
-.categories .product .selles {
+.categories .categories_products .product .selles {
   width: 300px;
   height: 200px;
   background-color: rgb(48, 48, 48);
@@ -273,25 +233,114 @@ nav .nav .languages {
   text-transform: capitalize;
   font-weight: bolder;
 }
-.categories .product .selles .name {
+.categories .categories_products .product .selles .name {
   font-size: 2em;
 }
-.categories .product .selles .profit {
+.categories .categories_products .product .selles .profit {
   font-size: 1.5em;
   color: rgb(255, 172, 11);
 }
-.categories .product .selles .dolor {
+.categories .categories_products .product .selles .dolor {
   font-size: 0.8em;
 }
-.categories .product .selles .profit1 {
+.categories .categories_products .product .selles .profit1 {
   color: rgb(122, 122, 122);
 }
-.categories .product .selles .profit1 .s50 {
+.categories .categories_products .product .selles .profit1 .s50 {
   font-size: 1.4em;
   color: rgb(255, 255, 255);
 }
-.categories .product:hover {
+.categories .categories_products .product:hover {
   transform: translateY(-10px);
-  box-shadow: 0px 10px 0px rgb(0, 0, 0);
+  box-shadow: 0px 10px 20px rgb(0, 0, 0);
   box-sizing: content-box;
+}
+
+.setting {
+  width: 280px;
+  height: 256px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 30px 20px;
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.setting .icons {
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+}
+.setting .icons .profileImg {
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  background-size: 50px;
+  background-image: url("https://i.pinimg.com/originals/47/58/95/475895044da324fbb8bfe11024b07854.jpg");
+}
+.setting .icons h1 {
+  text-transform: capitalize;
+  padding-left: 10px;
+  font-size: 0.6em;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  line-break: loose;
+}
+
+.singend {
+  width: 400px;
+  color: black;
+  background-image: linear-gradient(90deg, red, blue, orange);
+  font-weight: bold;
+  text-transform: capitalize;
+  height: 500px;
+}
+.singend .rout {
+  display: flex;
+  font-size: medium;
+  justify-content: space-evenly;
+}
+.singend .log {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  height: 50px;
+}
+.singend .log .signIcons {
+  font-size: x-large;
+}
+.singend .log h1 {
+  padding-left: 0.1cm;
+}
+.singend .dataInputs {
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  justify-content: space-between;
+  background-color: red;
+  margin-top: 0.7cm;
+}
+.singend .dataInputs .user {
+  display: flex;
+  width: 400px;
+  height: 50px;
+  background-color: blue;
+  align-items: center;
+}
+.singend .dataInputs .user .userIcons {
+  font-size: x-large;
+}
+.singend .dataInputs .user input {
+  width: 400px;
+  height: 35px;
+  background-color: transparent;
+  border: none;
+  outline: none;
 }/*# sourceMappingURL=main.css.map */

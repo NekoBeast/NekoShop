@@ -2,6 +2,8 @@
 import { Image } from "@nextui-org/image";
 import React from "react";
 import { icons } from "@/icons/icons";
+import Setting from "./setting/setting";
+import Singend from "./singend/singend";
 
 export default function Nav() {
   return (
@@ -16,7 +18,6 @@ export default function Nav() {
           </h1>
         </div>
       </div>
-
       <div className="search">
         <input type="search" placeholder="Search..." />
         <div className="searchIcone"></div>
@@ -37,6 +38,12 @@ export default function Nav() {
               </div>
             </div>
             <h1>NekoBeast</h1>
+          </div>
+          <div className="settings">
+            <Setting />
+          </div>
+          <div className="singend">
+            <Singend/>
           </div>
         </div>
 

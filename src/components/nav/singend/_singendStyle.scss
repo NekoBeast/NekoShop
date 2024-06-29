@@ -1,0 +1,61 @@
+.singend {
+  width: 400px;
+  // background-color:white;
+  // -webkit-background-clip: text;
+  // -moz-background-clip: text;
+  // background-clip:text;
+  color: black;
+  background-image: linear-gradient(90deg, red, blue, orange);
+  font-weight: bold;
+  text-transform: capitalize;
+  height: 500px;
+  .rout {
+    display: flex;
+    font-size: medium;
+    justify-content: space-evenly;
+  }
+  .log {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    height: 50px;
+    .signIcons {
+      font-size: x-large;
+    }
+
+    h1 {
+      padding-left: 0.1cm;
+    }
+  }
+  .dataInputs {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-between;
+    background-color: red;
+    margin-top: 0.7cm;
+    .user {
+      display: flex;
+      width: 400px;
+      height: 50px;
+      background-color: blue;
+      align-items: center;
+      // justify-content: center;
+
+      .userIcons {
+        font-size: x-large;
+      }
+      input {
+        width: 400px;
+        height: 35px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+      }
+    }
+  }
+}

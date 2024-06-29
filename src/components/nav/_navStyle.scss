@@ -1,12 +1,14 @@
 @import "../colors/rgb";
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: $Black;
   width: 100%;
   height: 71px;
-  background-color: $Black;
   color: $White;
+
   .logo {
     position: relative;
     line-height: 1.5cm;
@@ -22,14 +24,21 @@ nav {
       z-index: -1;
     }
     .header {
-      z-index: 1;
+      // z-index: 1;
       width: 424px;
       display: flex;
       align-items: center;
       justify-content: center;
       height: 149px;
-
       h1 {
+        background-image: url("https://i.pinimg.com/originals/82/b9/fc/82b9fc2387d46e545ee8b3a8199356f0.jpg");
+        background-size: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
         font-size: 4.5rem;
         font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
         font-weight: bold;
@@ -38,6 +47,14 @@ nav {
         position: relative;
         right: 2cm;
         .shop {
+          background-image: url("https://i.pinimg.com/originals/82/b9/fc/82b9fc2387d46e545ee8b3a8199356f0.jpg");
+          background-size: 200px;
+          background-position-x: -2cm;
+          background-repeat: no-repeat;
+          -webkit-background-clip: text;
+          -moz-background-clip: text;
+          background-clip: text;
+          color: transparent;
           font-size: 3rem;
           position: relative;
           left: 3cm;
@@ -78,8 +95,19 @@ nav {
       display: flex;
       align-items: center;
       justify-content: space-between;
-
       width: 220px;
+
+      .settings {
+        display: none;
+        z-index: 3;
+        position: absolute;
+        top: 70px;
+      }
+      .singend {
+        position: absolute;
+        z-index: 3;
+        top: 70px;
+      }
     }
     .info {
       font-weight: bolder;

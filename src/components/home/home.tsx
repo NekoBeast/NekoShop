@@ -7,16 +7,16 @@ const Nema = () => {
   return (
     <>
       <div className="main">
-      
+        <div className="shoesImg"></div>
         <div className="ads">
           <div className="catogories">
             <div className="fashon">
               <div className="icons">{icons.female}</div>
-              <Link href="#">Women’s Fashon</Link>
+              <Link href="/">Women’s Fashon</Link>
             </div>
             <div className="fashon">
               <div className="icons">{icons.man}</div>
-              <Link href="#">Man's Fashon</Link>
+              <Link href="/">Man's Fashon</Link>
             </div>
             <div className="fashon">
               <div className="icons">{icons.shoes}</div>
