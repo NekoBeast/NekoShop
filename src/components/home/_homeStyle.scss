@@ -1,11 +1,12 @@
 @import "../colors/rgb";
+@import "../home/footerontener/footerStyle";
 
 .main {
   position: relative;
   background-color: $orange;
   width: 100%;
   height: 200svh;
-
+  z-index: -2;
   .shoesImg {
     width: 100%;
     height: 100vh;
@@ -14,6 +15,7 @@
     background-repeat: no-repeat;
     position: fixed;
     filter: blur(5px);
+    z-index: -1;
   }
   .ads {
     display: flex;

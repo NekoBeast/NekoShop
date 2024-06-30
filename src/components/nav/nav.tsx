@@ -3,8 +3,7 @@ import { Image } from "@nextui-org/image";
 import React from "react";
 import { icons } from "@/icons/icons";
 import Setting from "./setting/setting";
-import Singend from "./singend/singend";
-
+import Singnav from "./router/singNav";
 export default function Nav() {
   return (
     <nav>
@@ -43,7 +42,7 @@ export default function Nav() {
             <Setting />
           </div>
           <div className="singend">
-            <Singend/>
+            <Singnav />
           </div>
         </div>
 

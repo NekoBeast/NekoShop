@@ -1,0 +1,98 @@
+.singend {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: black;
+
+  font-weight: bold;
+  text-transform: capitalize;
+
+  .dataInputs {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    justify-content: space-between;
+    margin-top: 0.7cm;
+    .user {
+      padding: 0px 10px;
+      display: flex;
+      width: 400px;
+      height: 50px;
+      background-color: rgb(255, 255, 255);
+      align-items: center;
+      // justify-content: center;
+      border-radius: 10px;
+      border: transparent;
+
+      .userIcons {
+        font-size: x-large;
+      }
+      input {
+        width: 400px;
+        height: 35px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        padding-left: 6px;
+        border-radius: 10px;
+      }
+    }
+  }
+  .donForger {
+    padding-top: 0.3cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 165px;
+    width: 400px;
+
+    .fogotpassword {
+      h1 {
+        color: rgb(188, 87, 255);
+      }
+    }
+
+    .rememberme {
+      display: flex;
+      align-items: center;
+
+      h1 {
+        padding-left: 5px;
+      }
+    }
+
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 400px;
+      height: 50px;
+      background-color: rgb(188, 87, 255);
+      border-radius: 10px;
+
+      button {
+        padding-left: 5px;
+      }
+    }
+  }
+  .donthave {
+    margin-top: 1cm;
+    background-color: white;
+    display: flex;
+    // flex-direction: column;
+
+    align-items: center;
+    border-radius: 10px;
+    width: 400px;
+    height: 50px;
+    h1 {
+      padding-left: 10px;
+    }
+
+    span {
+      padding-left: 5px;
+      color: rgb(188, 87, 255);
+    }
+  }
+}

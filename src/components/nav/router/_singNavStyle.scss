@@ -1,0 +1,24 @@
+@import "./singedUp/singUpStyle";
+@import "./singend/singendStyle";
+.rout {
+  width: 350px;
+  display: flex;
+  font-size: medium;
+  justify-content: space-between;
+  .log {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(188, 87, 255);
+    border-radius: 10px;
+    height: 50px;
+    .signIcons {
+      font-size: x-large;
+    }
+    h1 {
+      padding-left: 0.1cm;
+    }
+  }
+}

@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import Offers from "./offers/offers";
 import Categories from "./categories/categories";
+import Footer from "./footerontener/footercontener";
 const Nema = () => {
   return (
     <>
@@ -26,6 +27,7 @@ const Nema = () => {
           <Offers />
         </div>
         <Categories />
+        <Footer />
       </div>
     </>
   );
