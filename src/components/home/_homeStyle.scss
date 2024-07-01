@@ -1,16 +1,16 @@
 @import "../colors/rgb";
 @import "../home/footerontener/footerStyle";
-
+@import "../home/offers/offer";
+@import "../home/categories/categoriesStyle";
 .main {
-  position: relative;
+  position: absolute;
   background-color: $orange;
   width: 100%;
-  height: 200svh;
   z-index: -2;
   .shoesImg {
     width: 100%;
     height: 100vh;
-    background-image: url("../img/trans.png");
+    background-image: url("/img/trans.png");
     background-size: 45cm;
     background-repeat: no-repeat;
     position: fixed;

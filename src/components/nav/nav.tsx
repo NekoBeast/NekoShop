@@ -4,17 +4,20 @@ import React from "react";
 import { icons } from "@/icons/icons";
 import Setting from "./setting/setting";
 import Singnav from "./router/singNav";
+import Link from "next/link";
 export default function Nav() {
   return (
     <nav>
       <div className="logo">
         <div className="clipPath"></div>
         <div className="header">
-          <h1>
-            Neko
-            <br />
-            <span className="shop">shop</span>
-          </h1>
+          <Link href="/">
+            <h1>
+              Neko
+              <br />
+              <span className="shop">shop</span>
+            </h1>
+          </Link>
         </div>
       </div>
       <div className="search">
@@ -54,7 +57,7 @@ export default function Nav() {
           </div>
         </div>
         <div className="shop" style={{ fontSize: "3.5em" }}>
-          {icons.shop}
+          {icons.shopCart}
         </div>
       </div>
     </nav>

@@ -1,0 +1,99 @@
+.offers {
+  display: flex;
+  width: 1100px;
+  height: 350px;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  border-radius: 10px;
+  background-color: white;
+  .box {
+    .box1 {
+      display: flex;
+      width: 1100px;
+      height: 350px;
+      overflow: hidden;
+      .info {
+        z-index: 1;
+        text-transform: capitalize;
+        position: relative;
+        .Hinfo {
+          position: absolute;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: end;
+          text-align: end;
+          line-height: 1.7cm;
+          font-weight: 900;
+          width: 1100px;
+          height: 350px;
+          padding: 0px 50px;
+          -webkit-background-clip: text;
+          -moz-background-clip: text;
+          background-clip: text;
+          color: transparent;
+          background-image: linear-gradient(90deg, red, blue, orange);
+          h1 {
+            font-size: 3.5em;
+          }
+          .A50 {
+            h1 {
+              font-size: 4em;
+
+              .per {
+                color: $orange;
+              }
+            }
+          }
+          p {
+            font-size: 32px;
+          }
+
+          .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $Black;
+            border-radius: 10px;
+            width: 172px;
+            height: 51px;
+            color: white;
+            font-weight: bolder;
+            font-size: 1em;
+            transition: all 0.2s ease-in;
+            .shopIcone {
+              font-size: 1.6em;
+              padding-right: 0.3cm;
+            }
+            &:hover {
+              background-color: white;
+              color: black;
+            }
+          }
+        }
+      }
+
+      .cool {
+        position: relative;
+        bottom: 4cm;
+        right: 5.5cm;
+        width: 1000px;
+        height: 600px;
+        background-image: url("../img/anime.jpg");
+        background-size: cover;
+        background-position: center;
+        transform: rotateZ(-47.14deg);
+      }
+      .cool1 {
+        position: relative;
+        right: 10cm;
+        width: 1000px;
+        height: 500px;
+        background-image: url("../img/click.jpg");
+        background-size: cover;
+        background-position: center;
+        transform: rotateZ(-47.14deg);
+      }
+    }
+  }
+}

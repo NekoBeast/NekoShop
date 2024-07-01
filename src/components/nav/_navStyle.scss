@@ -1,5 +1,6 @@
 @import "../colors/rgb";
 @import "./router/singNavStyle";
+@import "./setting/settingStyle";
 nav {
   display: flex;
   justify-content: space-between;
@@ -107,6 +108,7 @@ nav {
         position: absolute;
         z-index: 3;
         top: 70px;
+        display: none;
       }
     }
     .info {
